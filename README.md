@@ -7,7 +7,7 @@ MicroFedML_1, MicroFedML_2,
 and [BBG+20](https://eprint.iacr.org/2020/704.pdf),
 implemented with [ABIDES](https://github.com/abides-sim/abides) framework.
 
-The full version of [MicroFedML](https://github.com/AnonymousOctupus/MicroFedML/blob/main/MicroFedML.pdf) is also included in the repository.
+The full version of [MicroFedML](https://github.com/AnonymousOctupus/MicroFedML/blob/main/MicroFedML.pdf) paper is also included in the repository.
 
 To run the code,
 please first enter the root folder of the project.
