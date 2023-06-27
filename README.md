@@ -1,11 +1,13 @@
 # MicroFedML
 
-This project includes implementation of 
+This project includes implementation of
 several secure aggregation protocols,
-MicroFedML_1, MicroFedML_2, 
-[BIK+17](https://eprint.iacr.org/2017/281.pdf), 
+MicroFedML_1, MicroFedML_2,
+[BIK+17](https://eprint.iacr.org/2017/281.pdf),
 and [BBG+20](https://eprint.iacr.org/2020/704.pdf),
 implemented with [ABIDES](https://github.com/abides-sim/abides) framework.
+
+The full version of [MicroFedML](https://github.com/AnonymousOctupus/MicroFedML/blob/main/MicroFedML.pdf) is also included in the repository.
 
 To run the code,
 please first enter the root folder of the project.
@@ -42,13 +44,13 @@ Several important configuration parameters include:
 - `-n <integer>`: the total number of users.
 - `--input_size <integer>`: the domain of input of each user.
 - `--offline_rate <float between 0 and 1>`: the fraction of offline users. **Note:** the default threshold of the protocol is set to 2/3, which means if at least 1/3 users are offline, the protocol will stop without output.
-- `-g <integer>`: number of groups, used in protocol MicroFedML_2. It must be at least 2 and `-n` must be divisible by `-g`. 
+- `-g <integer>`: number of groups, used in protocol MicroFedML_2. It must be at least 2 and `-n` must be divisible by `-g`.
 - `--num_neighbors <integer>`: number of neighbors of each user, used in BBG+20.
 
 More example commands can be found in `./experiments` folder
 in the corresponding `.sh` files.
 
-The running results can be found 
+The running results can be found
 in `./results`.
 More specifically,
 - `./results/secagg/ro_timing.csv`: running results for MicroFedML_1.
