@@ -1,7 +1,7 @@
 
 # Segmenting a long input x
 # into at least num segments, each of bit length length
-def segment(x, num, length):
+def segment(x, num = 1, length = 1):
   segs = []
   mask = (1 << (length)) - 1
   # print(mask)

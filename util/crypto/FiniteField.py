@@ -93,7 +93,7 @@ class FiniteField(object):
       return self.p - 1
 
   def convert (self, a, range):
-    return a * self.p // range
+    return (a * self.p) // range
 
 
 

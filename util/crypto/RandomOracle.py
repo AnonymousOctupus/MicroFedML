@@ -18,9 +18,15 @@ class RandomOracle(object):
                 nh.sha256((k + i).to_bytes(32, "big")),
                 "big")
       base = self.finite_field.convert(hash, 2**256)
+      counter = 0
       while self.finite_field.order(base) * 2 + 1 != self.finite_field.getPrime():
       # while self.finite_field.order(base) != self.finite_field.getPrime() - 1:
         base = base + 1
+        counter = counter + 1
+        # print(f"counter = {counter}")
+        if counter > 1000:
+          print(f"stuck at {i}")
+          exit()
       # result.append(base)
       result[i] = base
 
